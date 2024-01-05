@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+  
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5) 50%), url(./IMG_1343.JPG);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.side-bar{
+
+    background-color: rgba(0,0,0,0.5);
+    width: 80px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(17px);
+    --webkit-backdrop-filter: blur(17px);
+    border-right: 1px solid rgba(0, 0, 0, 0.6);
+    left: 0;
+    top: 0;
+    z-index: 1; 
+    transition: 0.1s;
+}
+.side-bar:hover{
+    width: 140px;
+}
+.logo img{
+
+    border-radius: 50%;
+    width: 60%;
+    display: flex;
+    text-align: center;
+    margin: 15px 20px 15px;
+    margin-bottom: 50PX;
+    animation-name: move;
+    animation-timing-function: ease-in-out ;
+    animation-duration: 3.0s ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move{
+
+    0% {transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+.logo h5{
+
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.side-bar:hover .logo h5{
+    display: none;
+}
+    
+.logo h4{
+
+    
+    color: #fff;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    display: none;  
+}
+.side-bar:hover .logo h4{
+
+    display: block;
+}
+
+.side-bar ul li a{
+
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    text-transform: capitalize;
+    display: none;
+}
+
+
+.side-bar:hover ul li a{
+    
+    display: block;
+    font-size: 10px;
+}
+
+.side-bar ul  :hover{
+
+    background-color: black;
+    color: wheat;
+
+}
+.fa{
+    
+    font-size: 18px;
+    color: #fff;
+    margin: 10px;
+}
+
+.side-bar ul li{
+
+    display: flex;
+    align-items: center;
+    
+    border-radius: 40px;
+    margin: 11px;
+}
+
+.line{
+
+    width: 35%;
+    margin-left: 18px;
+    text-align: center;
+    animation: move;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3.0s;
+    animation-iteration-count: infinite;
+    
+}
+
+.side-bar:hover .line{
+
+    display: none;
+}
+
+
+.name{
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 170px;
+    margin-left: 180px;
+    font-size: 22px;
+    color: #fff;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.name h1{
+
+    margin: 10px;
+}
+
+
+@media (max-width: 1000px) 
+{
+
+    .name{
+        
+        margin-top: 100px;
+        margin-left: 150px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 650px)
+{
+
+    .name{
+        
+        margin-top: 70px;
+        margin-left: 150px;
+        font-size: 13px;
+    }
+}
+
